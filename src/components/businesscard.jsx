@@ -1,6 +1,9 @@
 import React from "react";
 import { HiMail } from 'react-icons/hi'
 import { FaLinkedin } from 'react-icons/fa'
+import {FaTwitterSquare,FaFacebookSquare,FaInstagramSquare,FaGithubSquare} from 'react-icons/fa'
+import pic from '../assets/pic.png'
+
 
 function Businesscard() {
   return (
@@ -8,7 +11,13 @@ function Businesscard() {
       <div className="flex flex-row items-center justify-center">
         <div className="text-white w-[550px] h-[868px] bg-[#23252C]">
           <div className="flex flex-col items-center justify-center p-16" >
+            {/* Top Part */}
+            <div>
+              <img src={pic} alt=""/>
+            </div>
 
+
+            {/* Middle Part */}
             <div className="flex flex-col items-center justify-between w-[317px] h-[399px] bg-[#1A1B21]">
               {/* Name */}
               <div className="flex flex-col items-center justify-center p-2">
@@ -42,9 +51,15 @@ function Businesscard() {
                 <div className=" text-lg font-bold ">Interests</div>
                 <div className=" text-xs font-thin leading-4">Food expert. Music scholar. Reader. Internet fanatic. Bacon buff. Entrepreneur. Travel geek. Pop culture ninja. Coffee fanatic.</div>
               </div>
+            </div>
 
 
-
+            {/* Footer */}
+            <div className="bg-[#161619] flex flex-row items-center  p-4 w-[317px] rounded-sm justify-evenly">
+              <FaTwitterSquare className="text-[#918E9B] text-4xl " />
+              <FaFacebookSquare className="text-[#918E9B] text-4xl " />
+              <FaInstagramSquare className="text-[#918E9B] text-4xl " />
+              <FaGithubSquare className="text-[#918E9B] text-4xl " />
             </div>
 
 
