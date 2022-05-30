@@ -6,11 +6,9 @@ function Card(props) {
   return (
     <div className="p-2 min-w-fit">
       <div className="relative ">
-          
         <img src={props.imgsrc} alt="" />
-        <p className="absolute top-3 left-3 px-2 py-2 bg-white text-black text-xs leading-3 rounded-md">
-          {props.status}
-        </p>
+        {props.openSpots === 0 &&<p className="absolute top-3 left-3 px-2 py-2 bg-white text-black text-xs leading-3 rounded-md">sold out</p>}
+        {props.openSpots != 0 &&<p className="absolute top-3 left-3 px-2 py-2 bg-white text-black text-xs leading-3 rounded-md">Available</p>}
       </div>
       <div className="p-1">
         <div className="flex flex-row items-center">

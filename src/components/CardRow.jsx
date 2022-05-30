@@ -5,13 +5,7 @@ import airbnbdata from "../data/airbnbdata.js";
 const cardArray = airbnbdata.map((item) => {
   return (
     <Card
-      imgsrc={item.imgsrc}
-      status={item.status}
-      rating={item.rating}
-      reviews={item.reviews}
-      country={item.country}
-      title={item.title}
-      price={item.price}
+    {...item}
     />
   );
 });
