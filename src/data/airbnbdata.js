@@ -1,0 +1,68 @@
+const airbnbData =
+ [
+    {imgsrc:"./images/swim.png",
+    status:"sold out",
+    rating:"10.0",
+    reviews:"3",
+    country:"USA",
+    title:"Life lessons with Katie Zaferes",
+    price:"$136"},
+
+    {imgsrc:"./images/swim.png",
+    status:"sold out",
+    rating:"10.0",
+    reviews:"3",
+    country:"USA",
+    title:"Life lessons with Katie Zaferes",
+    price:"$136"},
+    {imgsrc:"./images/swim.png",
+    status:"sold out",
+    rating:"10.0",
+    reviews:"3",
+    country:"USA",
+    title:"Life lessons with Katie Zaferes",
+    price:"$136"},
+
+    {imgsrc:"./images/swim.png",
+    status:"sold out",
+    rating:"10.0",
+    reviews:"3",
+    country:"USA",
+    title:"Life lessons with Katie Zaferes",
+    price:"$136"},
+    {imgsrc:"./images/swim.png",
+    status:"sold out",
+    rating:"10.0",
+    reviews:"3",
+    country:"USA",
+    title:"Life lessons with Katie Zaferes",
+    price:"$136"},
+
+    {imgsrc:"./images/swim.png",
+    status:"sold out",
+    rating:"10.0",
+    reviews:"3",
+    country:"USA",
+    title:"Life lessons with Katie Zaferes",
+    price:"$136"},
+    {imgsrc:"./images/swim.png",
+    status:"sold out",
+    rating:"10.0",
+    reviews:"3",
+    country:"USA",
+    title:"Life lessons with Katie Zaferes",
+    price:"$136"},
+
+    {imgsrc:"./images/swim.png",
+    status:"sold out",
+    rating:"10.0",
+    reviews:"3",
+    country:"USA",
+    title:"Life lessons with Katie Zaferes",
+    price:"$136"},
+ 
+    
+]
+
+export default airbnbData
+

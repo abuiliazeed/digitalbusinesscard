@@ -2,6 +2,7 @@ import React from "react";
 import group from "../assets/group.png";
 
 function Hero() {
+
   return (
     <div className="flex flex-col items-center justify-center ">
       <div className="p-6 max-w-4xl ">
