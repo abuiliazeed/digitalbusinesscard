@@ -9,11 +9,11 @@ function Hero() {
       </div>
 
       <div className=" p-8 max-w-4xl">
-        <div className="text-4xl font-bold p-2">Online Experiences</div>
-        <div className="text-lg p-2">
+        <h1 className="text-4xl font-bold p-2">Online Experiences</h1>
+        <p className="text-lg p-2">
           Join unique interactive activities led by one-of-a-kind hosts—all
           without leaving home.
-        </div>
+        </p>
       </div>
 
     </div>
