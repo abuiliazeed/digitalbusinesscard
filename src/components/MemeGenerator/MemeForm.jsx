@@ -1,7 +1,10 @@
 import React from "react";
 import { BsCardImage } from "react-icons/bs";
+import memesData from "../../data/memesData";
 
 function MemeForm() {
+const randomMeme = memesData[Math.floor(Math.random() * memesData.length)];
+console.log(randomMeme.url);
   return (
     <>
       <form>
@@ -23,6 +26,9 @@ function MemeForm() {
             Get a new meme image{" "}
             <BsCardImage className="ml-2 text-green-500 border-yellow-500 border-2" />
           </button>
+        </div>
+        <div className="flex flex-col items-center justify-center py-4">
+            <img src={randomMeme.url} alt="meme" className="w-[80%]" />
         </div>
       </form>
     </>

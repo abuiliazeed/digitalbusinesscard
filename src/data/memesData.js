@@ -1,3 +1,4 @@
+
 const memesData=
     [
       {
@@ -799,7 +800,7 @@ const memesData=
         width: 500,
         height: 303,
         box_count: 2,
-      },
+      }
     ]
 
-    export default memesData;
+export default memesData
