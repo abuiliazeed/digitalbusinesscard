@@ -1,5 +1,5 @@
 import React from "react";
-
+import {MdLocationOn} from 'react-icons/md'
 function JournalCard(props) {
   return (
     <>
@@ -9,8 +9,10 @@ function JournalCard(props) {
             <img src={props.image} alt="" />
           </div>
           <div className="flex flex-col p-4 items-start">
-              <div className="">
-                  <span>{props.country}</span><span>{props.geolink}</span>
+              <div className="flex items-center">
+                  <span className="mr-1 text-[#F55A5A] "><MdLocationOn /></span>
+                  <span className="mr-1">{props.country}</span>
+                  <span><a href={props.geolink}>View on Google Maps</a></span>
                   </div>
               <div>{props.title}</div>
               <div>
