@@ -1,6 +1,15 @@
 import React from "react";
 import { AiFillStar } from "react-icons/ai";
 
+import axios from 'axios';
+
+
+axios.defaults.headers.common = {'Authorization': `bearer 4a7d7af2bb39a3f73709699945644377183125913489f14c05be5ca4d76a9d4cf49fe74848531b235774705da5e6ce3eab8e5d1583dfa329df8010a04b91792bdce18dc4790317bea87f40bcf2ddd9395354bd35e862290c7488573fff5da16dc1bee192ad8f009d6f7fc3aed222dd7dacdd08fcc29f62d61e3fa19d979a47a2`}
+
+axios.get('http://localhost:1337/api/animals').then(response => {
+  console.log(response.data.data);
+});
+
 function Card(props) {
   return (
     <div className="p-2 min-w-fit">
