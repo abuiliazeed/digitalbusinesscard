@@ -19,7 +19,7 @@ function MemeForm() {
         </div>
 
         <div className="flex justify-center">
-          <button className="rounded-md p-2 flex flex-row items-center justify-center bg-gradient-to-r from-[#672280]  to-[#A626D3] text-white text-lg w-[80%]">
+          <button className="rounded-md p-2 flex flex-row items-center justify-center bg-gradient-to-r from-[#672280]  to-[#A626D3] text-white text-lg w-[80%] hover:scale-105">
             Get a new meme image{" "}
             <BsCardImage className="ml-2 text-green-500 border-yellow-500 border-2" />
           </button>
