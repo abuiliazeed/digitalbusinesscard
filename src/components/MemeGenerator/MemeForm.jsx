@@ -27,8 +27,8 @@ console.log(randomMeme.url);
             <BsCardImage className="ml-2 text-green-500 border-yellow-500 border-2" />
           </button>
         </div>
-        <div className="flex flex-col items-center justify-center py-4">
-            <img src={randomMeme.url} alt="meme" className="w-[80%]" />
+        <div className="flex flex-col items-center justify-center py-6">
+            <img src={randomMeme.url} alt="meme" className="w-[80%] hover:scale-105 rounded-md " />
         </div>
       </form>
     </>
