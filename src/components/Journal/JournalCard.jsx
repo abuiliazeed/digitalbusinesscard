@@ -11,12 +11,12 @@ function JournalCard(props) {
           <div className="flex flex-col p-4 items-start">
               <div className="flex items-center">
                   <span className="mr-1 text-[#F55A5A] "><MdLocationOn /></span>
-                  <span className="mr-1">{props.country}</span>
-                  <span><a href={props.geolink}>View on Google Maps</a></span>
+                  <span className="mr-4 uppercase">{props.country}</span>
+                  <span><a href={props.geolink} className="underline text-[#918E9B]">View on Google Maps</a></span>
                   </div>
-              <div>{props.title}</div>
+              <div className="text-2xl font-bold mb-2">{props.title}</div>
               <div>
-                  <span>{props.startdate}</span>-<span>{props.enddate}</span>
+                  <span className="font-bold">{props.startdate}</span> - <span className="font-bold">{props.enddate}</span>
               </div>
               <div>{props.description}</div>
           </div>

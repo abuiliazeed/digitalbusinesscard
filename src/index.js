@@ -8,8 +8,9 @@ import Journal from './Journal';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Journal />
     <App />
+    <Journal />
+    
   </React.StrictMode>
 );
 
