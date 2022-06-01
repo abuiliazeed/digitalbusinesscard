@@ -1,5 +1,4 @@
 import React from "react";
-import swim from "../assets/swim.png";
 import { AiFillStar } from "react-icons/ai";
 
 function Card(props) {

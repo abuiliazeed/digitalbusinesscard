@@ -1,7 +1,6 @@
-import Businesscard from "./components/businesscard";
-import CardRow from "./components/CardRow";
-import Hero from "./components/Hero";
-import NavbarAirbnb from "./components/NavbarAirbnb";
+import CardRow from "./components/Airbnb/CardRow";
+import Hero from "./components/Airbnb/Hero";
+import NavbarAirbnb from "./components/Airbnb/NavbarAirbnb";
 
 
 function App() {

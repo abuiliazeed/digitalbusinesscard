@@ -2,7 +2,7 @@ import React from "react";
 import { HiMail } from 'react-icons/hi'
 import { FaLinkedin } from 'react-icons/fa'
 import {FaTwitterSquare,FaFacebookSquare,FaInstagramSquare,FaGithubSquare} from 'react-icons/fa'
-import pic from '../assets/pic.png'
+import pic from '../../assets/pic.png'
 
 
 function Businesscard() {

@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import Journal from './Journal';
+import Businesscard from './components/DigitalBusinessCard/businesscard';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -10,6 +11,7 @@ root.render(
   <React.StrictMode>
     <App />
     <Journal />
+    <Businesscard />
     
   </React.StrictMode>
 );
