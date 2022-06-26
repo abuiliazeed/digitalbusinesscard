@@ -7,8 +7,8 @@ const randomMeme = memesData[Math.floor(Math.random() * memesData.length)];
 console.log(randomMeme.url);
   return (
     <>
-      <form>
-        <div className="flex flex-row justify-center p-2">
+      <form className="">
+        <div className="flex flex-row justify-center p-2 ">
           <input
             type="text"
             placeholder="Top Text"
@@ -27,8 +27,8 @@ console.log(randomMeme.url);
             <BsCardImage className="ml-2 text-green-500 border-yellow-500 border-2" />
           </button>
         </div>
-        <div className="flex flex-col items-center justify-center py-6">
-            <img src={randomMeme.url} alt="meme" className="w-[80%] hover:scale-105 rounded-md " />
+        <div className="flex flex-col items-center justify-center py-6 ">
+            <img src={randomMeme.url} alt="meme" className="w-[80%]  hover:scale-105 rounded-md max " />
         </div>
       </form>
     </>
