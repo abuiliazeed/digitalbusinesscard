@@ -5,15 +5,18 @@ import App from './App';
 import Journal from './Journal';
 import Businesscard from './components/DigitalBusinessCard/businesscard';
 import MemeGenerator from './components/MemeGenerator/MemeGenerator';
+import Excercises from './components/Excercises/Excercises';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    
     <MemeGenerator />
     <App />
     <Journal />
     <Businesscard />
+    <Excercises />
     
   </React.StrictMode>
 );
