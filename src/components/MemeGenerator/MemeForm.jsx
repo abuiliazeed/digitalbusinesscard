@@ -32,11 +32,7 @@ function MemeForm() {
         >
           Get a new meme image 🖼
         </button>
-        <img
-          src={memeImage}
-          alt=""
-          className=" max-w-lg py-6 "
-        />
+        <img src={memeImage} alt="" className=" max-w-lg py-6 " />
       </div>
     </>
   );
