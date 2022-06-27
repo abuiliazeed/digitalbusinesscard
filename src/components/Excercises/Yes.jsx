@@ -2,43 +2,62 @@ import React, { useState } from "react";
 import Block from "./Block";
 
 function Yes() {
-            // Yes/no Toggle
-            const [result, setResult] = useState("Yes");
-            const handleClick = () => {
-              if (result === "Yes") {
-                setResult("No");
-              } else {
-                setResult("Yes");
-              }
-            };
+  // Yes/no Toggle
+  const [result, setResult] = useState("Yes");
+  const handleClick = () => {
+    if (result === "Yes") {
+      setResult("No");
+    } else {
+      setResult("Yes");
+    }
+  };
 
-            // Counter 
-            const [counter, setCounter] = useState(0);
-            const handleCountup = () => {
-              setCounter(counter + 1);
-            };
-            const handleCountdown = () => {
-              setCounter(counter - 1);
-            };
-            const handleReset = () => {
-              setCounter(0);
-            };
+  // Counter
+  const [counter, setCounter] = useState(0);
+  const handleCountup = () => {
+    setCounter(counter + 1);
+  };
+  const handleCountdown = () => {
+    setCounter(counter - 1);
+  };
+  const handleReset = () => {
+    setCounter(0);
+  };
 
-            // rows Up/Down
-            const [uprow, setUprow] = useState([{title:"0"},{title:"1"},{title:"2"},{title:"3"},{title:"4"}]);  
-            const [downrow, setDownrow] = useState([{title:"5"},{title:"6"},{title:"7"},{title:"8"},{title:"9"}]);
+  // rows Up/Down
+  const [uprow, setUprow] = useState([
+    { title: "0" },
+    { title: "1" },
+    { title: "2" },
+    { title: "3" },
+    { title: "4" },
+  ]);
+  const [downrow, setDownrow] = useState([
+    { title: "5" },
+    { title: "6" },
+    { title: "7" },
+    { title: "8" },
+    { title: "9" },
+  ]);
 
-            const upArrow = () => {
-              setUprow([...uprow,1])
-            }
-            const downArrow = () => {
-              setDownrow([...downrow,1])
-            }
-const uprowRender = uprow.map((item) => { return <Block {...item} /> })
-console.log(uprowRender)
-const downrowRender = downrow.map((item) => { return <Block {...item} /> })
-console.log(downrowRender)
-
+  const upArrow = (item) => {
+    setUprow(...uprow, { item });
+    setDownrow(...downrow.filter((item) => item.title !== item));
+  };
+  const downArrow = (item) => {
+    setDownrow(...downrow, { item });
+    setUprow(...uprow.filter((item) => item.title !== item));
+  };
+  const uprowRender = uprow.map((item) => {
+    return <Block {...item} 
+    onClick={console.log("up")} 
+    />;
+  });
+  const downrowRender = downrow.map((item) => {
+    return <Block {...item} 
+    onClick={console.log("down")} 
+    />;
+  });
 
   return (
     <>
