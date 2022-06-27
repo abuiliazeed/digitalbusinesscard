@@ -98,11 +98,11 @@ function Yes() {
         {/* Row changer */}
         <div className="bg-black flex flex-col m-2 items-center justify-center">
           {/* up row */}
-          <div className="bg-black flex flex-row m-2 items-center justify-center text-white">
+          <div className="bg-black flex flex-row flex-wrap m-2 items-center justify-center text-white">
             {uprowRender}
           </div>
           {/* down row */}
-          <div className="bg-black flex flex-row m-2 items-center justify-center">
+          <div className="bg-black flex flex-row flex-wrap m-2 items-center justify-center">
             {downrowRender}
           </div>
         </div>
